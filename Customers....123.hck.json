@@ -1,0 +1,446 @@
+{
+  "modelName": "New model",
+  "collections": [
+    {
+      "collectionName": "Customers",
+      "type": "object",
+      "properties": [
+        {
+          "name": "Name",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "mode": "string",
+          "subtype": "string",
+          "required": false,
+          "childType": "text",
+          "type": "string",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey",
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePartitionKey": false,
+          "compositeClusteringKey": false,
+          "GUID": "e3bba3ed-fae4-4a51-bb8f-45c95d70f69d",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "Email",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "mode": "string",
+          "subtype": "string",
+          "required": false,
+          "childType": "text",
+          "type": "string",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey",
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePartitionKey": false,
+          "compositeClusteringKey": false,
+          "GUID": "fb59bf00-2b69-441d-b869-749ede832ee5",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "Phone",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "mode": "string",
+          "subtype": "string",
+          "required": false,
+          "childType": "text",
+          "type": "string",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey",
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePartitionKey": false,
+          "compositeClusteringKey": false,
+          "GUID": "8242247a-776d-4b23-8fd6-1a8357192028",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "Review",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "mode": "string",
+          "subtype": "string",
+          "required": false,
+          "childType": "text",
+          "type": "string",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey",
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePartitionKey": false,
+          "compositeClusteringKey": false,
+          "GUID": "2251d275-12f5-4c3e-9d42-2170fdf2c673",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "ID",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "primaryKey": true,
+          "mode": "int",
+          "required": true,
+          "childType": "numeric",
+          "type": "numeric",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey",
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePartitionKey": false,
+          "compositeClusteringKey": false,
+          "GUID": "f2db4544-85d6-4f01-8ab7-72171f3b69e7",
+          "error": {},
+          "childRelationships": [
+            "52e79732-f939-4086-94f6-f60b88b1c5c2"
+          ]
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "51af724d-9b76-4399-b895-98a2aeac43aa"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "collectionUsers": [],
+      "tableIfNotExists": true,
+      "GUID": "2fb143df-2b25-4511-bb53-fab6fa8b6c2f",
+      "bucketId": "9efe2f61-6e00-440d-a2d6-d47f82d2dba6",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "collectionName": "Orders",
+      "type": "object",
+      "properties": [
+        {
+          "name": "Cust_ID",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "primaryKey": true,
+          "mode": "int",
+          "required": true,
+          "alternateKey": false,
+          "childType": "numeric",
+          "type": "numeric",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey",
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePartitionKey": false,
+          "compositeClusteringKey": false,
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "error": {},
+          "GUID": "e721c242-d07d-440d-97d5-0f01e08676a6",
+          "relationshipType": "Foreign Key",
+          "foreignCollection": "2fb143df-2b25-4511-bb53-fab6fa8b6c2f",
+          "foreignField": [
+            "2fb143df-2b25-4511-bb53-fab6fa8b6c2f",
+            "f2db4544-85d6-4f01-8ab7-72171f3b69e7"
+          ],
+          "parentRelationship": "52e79732-f939-4086-94f6-f60b88b1c5c2"
+        },
+        {
+          "name": "Name",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "mode": "string",
+          "subtype": "string",
+          "required": false,
+          "childType": "text",
+          "type": "string",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey",
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePartitionKey": false,
+          "compositeClusteringKey": false,
+          "compositePrimaryKey": false,
+          "GUID": "0e601746-a737-46d4-9b0f-1dc9d2f40b6f",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "Date",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "mode": "string",
+          "subtype": "string",
+          "required": false,
+          "childType": "text",
+          "type": "string",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey",
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "compositePartitionKey": false,
+          "compositeClusteringKey": false,
+          "compositePrimaryKey": false,
+          "GUID": "2fd935c8-abf5-49b1-8899-8987811dd08f",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "ec0c5dce-810c-40cf-9b21-bdd82ea0b436"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "collectionUsers": [],
+      "tableIfNotExists": true,
+      "GUID": "1d5f56d7-a95d-4f6c-bf7e-196768b247d8",
+      "bucketId": "9efe2f61-6e00-440d-a2d6-d47f82d2dba6",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    }
+  ],
+  "buckets": [
+    {
+      "name": "SomeAdressesList",
+      "type": "bucket",
+      "collectionIds": [
+        "2fb143df-2b25-4511-bb53-fab6fa8b6c2f",
+        "1d5f56d7-a95d-4f6c-bf7e-196768b247d8"
+      ],
+      "backgroundColor": {
+        "r": 216,
+        "g": 0,
+        "b": 115,
+        "a": 1
+      },
+      "show": true,
+      "isActivated": true,
+      "indexes": [],
+      "GUID": "9efe2f61-6e00-440d-a2d6-d47f82d2dba6",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    }
+  ],
+  "views": [],
+  "relationships": [
+    {
+      "name": "fk_Customers_ID_to_Orders_Cust_ID",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "2fb143df-2b25-4511-bb53-fab6fa8b6c2f",
+          "f2db4544-85d6-4f01-8ab7-72171f3b69e7"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "1d5f56d7-a95d-4f6c-bf7e-196768b247d8",
+          "e721c242-d07d-440d-97d5-0f01e08676a6"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "0..n",
+      "customProperties": {
+        "disableNoValidate": true
+      },
+      "parentCollection": "2fb143df-2b25-4511-bb53-fab6fa8b6c2f",
+      "childCollection": "1d5f56d7-a95d-4f6c-bf7e-196768b247d8",
+      "GUID": "52e79732-f939-4086-94f6-f60b88b1c5c2",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
+      "hackoladeStyles": {
+        "GUID": "eb466ff8-fe04-41c4-86a9-a5592c475d9d",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1440,
+            "y": 1140.5
+          },
+          {
+            "x": 1359.5,
+            "y": 1140.5
+          },
+          {
+            "x": 1359.5,
+            "y": 1141
+          },
+          {
+            "x": 1279,
+            "y": 1141
+          }
+        ],
+        "sides": [
+          "left",
+          "right"
+        ]
+      }
+    }
+  ],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "9efe2f61-6e00-440d-a2d6-d47f82d2dba6": "SomeAdressesList",
+    "2fb143df-2b25-4511-bb53-fab6fa8b6c2f": "Customers",
+    "e3bba3ed-fae4-4a51-bb8f-45c95d70f69d": "Name",
+    "fb59bf00-2b69-441d-b869-749ede832ee5": "Email",
+    "8242247a-776d-4b23-8fd6-1a8357192028": "Phone",
+    "2251d275-12f5-4c3e-9d42-2170fdf2c673": "Review",
+    "f2db4544-85d6-4f01-8ab7-72171f3b69e7": "ID",
+    "1d5f56d7-a95d-4f6c-bf7e-196768b247d8": "Orders",
+    "e721c242-d07d-440d-97d5-0f01e08676a6": "Cust_ID",
+    "0e601746-a737-46d4-9b0f-1dc9d2f40b6f": "Name",
+    "2fd935c8-abf5-49b1-8899-8987811dd08f": "Date",
+    "52e79732-f939-4086-94f6-f60b88b1c5c2": "fk_Customers_ID_to_Orders_Cust_ID"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [],
+    "GUID": "bee43501-6e49-4927-9231-080f12dc07e4"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [],
+    "GUID": "a73edc87-31ca-46bd-bced-7a2a4804fb13"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "1614629d-f4e7-4730-9b8a-5e69299fe980"
+  },
+  "sources": [],
+  "decorativeSymbols": [],
+  "dbVersion": "Runtime 16",
+  "dbVendor": "Delta Lake",
+  "appTarget": "DeltaLake",
+  "creationTS": "2025-06-04T08:10:13.164Z",
+  "GUID": "cdb8ff8c-ca8e-437a-9f44-654c73980dea",
+  "isLineageEnabled": false,
+  "lastModifTS": "2025-06-04T08:55:06.779Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginName": "DeltaLake",
+    "pluginVersion": "0.2.26",
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.2.1"
+  },
+  "hackoladeMeta": {},
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "2fb143df-2b25-4511-bb53-fab6fa8b6c2f",
+            "x": 1080,
+            "y": 1080,
+            "width": 199,
+            "height": 122,
+            "color": {}
+          },
+          {
+            "GUID": "1d5f56d7-a95d-4f6c-bf7e-196768b247d8",
+            "x": 1440,
+            "y": 1097,
+            "width": 201,
+            "height": 87,
+            "color": {}
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [
+          {
+            "x": 1040,
+            "y": 1040,
+            "GUID": "9efe2f61-6e00-440d-a2d6-d47f82d2dba6"
+          }
+        ],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [],
+        "relationshipUpdateDisabled": false
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
+}
